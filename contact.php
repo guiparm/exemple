@@ -10,7 +10,7 @@ if(isset($_POST["envoi"])){
             $headers .= "content-type: text/html; charset=UTF8" ."\r\n";
             $headers .= "From:".$_POST["mail"]."\r\n"."Reply-To: " .$_POST["mail"]."\r\n"."X-Mailer: PHP/".phpversion();
             echo $headers;
-            //mail("guillaume.parmentier@free.fr","formulaire de contact",$comment,$headers);
+            
 
             if(isset($_POST["dataagree"])){
                 
@@ -29,14 +29,7 @@ if(isset($_POST["envoi"])){
         echo "hello world<br>";
     }
 }
-/*require("connect.php");
-$res=$dbh->query("SELECT * FROM `gparmentierMail`");
-$res=$dbh->query("INSERT INTO `gparmentierMail`(`id`,`mail`) VALUES ('','$email')");
-while($res_for=$res->fetch()){
-$a=$res_for["id"];
-$b=$res_for["mail"];
-echo "$a $b  <br>";
-}*/
+
 ?>
 
 <!DOCTYPE html>
