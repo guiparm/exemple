@@ -1,0 +1,62 @@
+* {
+            font-family: Georgia, arial, sans-serif;
+        }
+html{
+        background: url(./img/av-107.jpg) no-repeat center;
+        background-size: 100vw 100vh;
+    
+}
+body{
+    background-color:burlywood;
+    width:96vw;
+    margin:2vw;
+    height:90vh;
+}
+       
+        strong{
+            color:blue;
+            font-size:1em;
+        }
+        h1{
+            font-weight: bold;
+            color:green;
+        }
+        h2{
+            font-weight:bold;
+            color:red;
+        }
+        form{
+            width:40vw;
+        }
+.containerimg{
+            position:absolute;
+            top:10%;
+            right:5%;
+    border-style:solid;
+    }
+p{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+}
+.gridy{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+
+}
+@media screen and (max-width:640px){
+    li{
+        transform:scale(0);
+        
+    }
+    .containerimg{
+        transform:scale(0.5);
+        top:5%;
+        right:0.5%;
+    }
+    ul:hover li{
+        transform:scale(1);
+    }
+    ol:hover li{
+        transform:scale(1)
+    }
+}
